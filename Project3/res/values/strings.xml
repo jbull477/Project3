@@ -14,5 +14,9 @@
 	<string name="home">Home</string>
 	<string name="exception">Failed to communicate with geolocation services</string>
     <string name="couldnotfind">Unable to locate address</string>
+    <string name="sparty_statue">Sparty Statue</string>
+    <string name="beaumont_tower">Beaumont Tower</string>
+    <string name="breslin_center">Breslin Center</string>
+    <string name="learn_more">Learn More!</string>
     
 </resources>

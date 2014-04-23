@@ -7,22 +7,17 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
+import android.content.Intent;
+import android.support.v4.app.NotificationCompat;
+import android.util.Log;
 import android.view.Menu;
-import java.io.IOException;
-import java.util.List;
-import java.util.Locale;
-import android.location.Address;
 import android.location.Criteria;
-import android.location.Geocoder;
-import android.preference.PreferenceManager;
-import android.content.SharedPreferences;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -179,6 +174,51 @@ private void setUI() {
         valid = true;
 
         setUI();
+    }
+    
+    public void onSparty(View view)
+    {
+    	Intent intent = new Intent(this, MainActivity.class);
+    	PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
+    	
+    	NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
+    	builder.setSmallIcon(R.drawable.ic_launcher);
+    	builder.setContentTitle(view.getContext().getString(R.string.sparty_statue));
+    	builder.setContentText(view.getContext().getString(R.string.learn_more));
+    	builder.setAutoCancel(true);
+    	builder.setContentIntent(pendingIntent);
+    	NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+    	mNotificationManager.notify(0, builder.build());
+    }
+    
+    public void onBeaumont(View view)
+    {
+    	Intent intent = new Intent(this, MainActivity.class);
+    	PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
+    	
+    	NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
+    	builder.setSmallIcon(R.drawable.ic_launcher);
+    	builder.setContentTitle(view.getContext().getString(R.string.beaumont_tower));
+    	builder.setContentText(view.getContext().getString(R.string.learn_more));
+    	builder.setAutoCancel(true);
+    	builder.setContentIntent(pendingIntent);
+    	NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+    	mNotificationManager.notify(0, builder.build());
+    }
+    
+    public void onBreslin(View view)
+    {
+    	Intent intent = new Intent(this, MainActivity.class);
+    	PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
+    	
+    	NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
+    	builder.setSmallIcon(R.drawable.ic_launcher);
+    	builder.setContentTitle(view.getContext().getString(R.string.breslin_center));
+    	builder.setContentText(view.getContext().getString(R.string.learn_more));
+    	builder.setAutoCancel(true);
+    	builder.setContentIntent(pendingIntent);
+    	NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+    	mNotificationManager.notify(0, builder.build());
     }
     
 	

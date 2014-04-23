@@ -24,7 +24,10 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f080009;
+        public static final int action_settings=0x7f08000c;
+        public static final int button1=0x7f080009;
+        public static final int button2=0x7f08000a;
+        public static final int button3=0x7f08000b;
         public static final int distanceBeaumont=0x7f080007;
         public static final int distanceBreslin=0x7f080006;
         public static final int distanceSparty=0x7f080008;
@@ -44,16 +47,20 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
+        public static final int beaumont_tower=0x7f05000e;
+        public static final int breslin_center=0x7f05000f;
         public static final int couldnotfind=0x7f05000c;
         public static final int dummy=0x7f050002;
         public static final int eb1230=0x7f050008;
         public static final int exception=0x7f05000b;
         public static final int home=0x7f05000a;
         public static final int latitude=0x7f050004;
+        public static final int learn_more=0x7f050010;
         public static final int newLocation=0x7f050006;
         public static final int newtext=0x7f050007;
         public static final int provider=0x7f050003;
         public static final int sparty=0x7f050009;
+        public static final int sparty_statue=0x7f05000d;
         public static final int textLongitude=0x7f050005;
     }
     public static final class style {
