@@ -28,6 +28,14 @@
 	        android:name="cse.msu.edu.project3.SpartyActivity"
 	        android:label="@string/app_name" >
         </activity>
+         <activity
+	        android:name="cse.msu.edu.project3.BeaumontActivity"
+	        android:label="@string/app_name" >
+        </activity>
+         <activity
+	        android:name="cse.msu.edu.project3.BreslinActivity"
+	        android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>

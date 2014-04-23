@@ -23,7 +23,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
-        android:id="@+id/spartyText"
+        android:id="@+id/breslinText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/providerDummy"
@@ -35,8 +35,8 @@
         android:id="@+id/textLongitude"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/spartyText"
-        android:layout_below="@+id/spartyText"
+        android:layout_alignRight="@+id/breslinText"
+        android:layout_below="@+id/breslinText"
         android:text="@string/textLongitude"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -45,7 +45,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/latitudeSparty"
-        android:layout_toRightOf="@+id/spartyText"
+        android:layout_toRightOf="@+id/breslinText"
         android:text="@string/dummy"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 

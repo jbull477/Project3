@@ -182,7 +182,7 @@ private void setUI() {
     	PendingIntent pendingIntent = PendingIntent.getActivity(view.getContext(), 0, intent, 0);
     	
     	NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
-    	builder.setSmallIcon(R.drawable.ic_launcher);
+    	builder.setSmallIcon(R.drawable.dantonio);
     	builder.setContentTitle(view.getContext().getString(R.string.sparty_statue));
     	builder.setContentText(view.getContext().getString(R.string.learn_more));
     	builder.setAutoCancel(true);
@@ -193,11 +193,11 @@ private void setUI() {
     
     public void onBeaumont(View view)
     {
-    	Intent intent = new Intent(this, MainActivity.class);
+    	Intent intent = new Intent(this, BeaumontActivity.class);
     	PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
     	
     	NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
-    	builder.setSmallIcon(R.drawable.ic_launcher);
+    	builder.setSmallIcon(R.drawable.dantonio);
     	builder.setContentTitle(view.getContext().getString(R.string.beaumont_tower));
     	builder.setContentText(view.getContext().getString(R.string.learn_more));
     	builder.setAutoCancel(true);
@@ -208,11 +208,11 @@ private void setUI() {
     
     public void onBreslin(View view)
     {
-    	Intent intent = new Intent(this, MainActivity.class);
+    	Intent intent = new Intent(this, BreslinActivity.class);
     	PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
     	
     	NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
-    	builder.setSmallIcon(R.drawable.ic_launcher);
+    	builder.setSmallIcon(R.drawable.dantonio);
     	builder.setContentTitle(view.getContext().getString(R.string.breslin_center));
     	builder.setContentText(view.getContext().getString(R.string.learn_more));
     	builder.setAutoCancel(true);
