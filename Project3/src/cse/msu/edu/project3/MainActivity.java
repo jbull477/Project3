@@ -26,9 +26,9 @@ public class MainActivity extends Activity {
     private double latitude = 0;
     private double longitude = 0;
     private boolean valid = false;
-    
-    private double spartyLat = 42.724303;
-    private double spartyLong = -84.480507;
+
+    private double spartyLat = 42.731124;
+    private double spartyLong = -84.487523;
     
     private double beaumontLat = 42.732031;
     private double beaumontLong = -84.482177;
@@ -178,8 +178,8 @@ private void setUI() {
     
     public void onSparty(View view)
     {
-    	Intent intent = new Intent(this, MainActivity.class);
-    	PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
+    	Intent intent = new Intent(this, SpartyActivity.class);
+    	PendingIntent pendingIntent = PendingIntent.getActivity(view.getContext(), 0, intent, 0);
     	
     	NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
     	builder.setSmallIcon(R.drawable.ic_launcher);
